@@ -1,5 +1,5 @@
 
-# Mobile Test Automation Project
+# Appium Mobile Automation Framework
 
 ![Appium](https://img.shields.io/badge/Appium-6DB33F?style=for-the-badge&logo=appium&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
@@ -8,7 +8,7 @@
 ![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)
 
 ### 🚀 Overview
-This project is designed to automate mobile application testing using Appium, TestNG, and Java. It focuses on testing the login functionality of a sample mobile application. The project includes a robust setup for starting and stopping the Appium server, initializing the Android driver, and running TestNG test cases.
+This project automates mobile application testing for **both Android and iOS platforms** using Appium, TestNG, and Java. The framework is designed to handle multiple platforms by switching desired capabilities and driver configurations dynamically. By modifying the driver setup in the `DriverManager` class, tests can be executed on Android devices using UiAutomator2 or on iOS devices using XCUITest.  
 
 ### 📋 Table of Contents
 - [🚀 Overview](#overview)
@@ -119,7 +119,7 @@ Appium Inspector is a tool for inspecting mobile applications. To install it, do
 
 ### 📁 Project Structure
 ```plaintext
-Appium_TestNG_MobileAutomationTesting
+appium-mobile-automation-framework
 ├── .idea
 ├── src
 │   ├── apk
@@ -137,7 +137,7 @@ Appium_TestNG_MobileAutomationTesting
 │               └── log4j2.xml
 ├── target
 ├── .gitignore
-├── Appium_TestNG_MobileAutomationTesting.iml
+├── appium-mobile-automation-framework.iml
 ├── LICENSE
 ├── pom.xml
 ├── README.md
@@ -156,8 +156,8 @@ Appium_TestNG_MobileAutomationTesting
 #### Using Maven
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/ChatGTHB/Appium_TestNG_MobileAutomationTesting.git
-   cd Appium_TestNG_MobileAutomationTesting
+   git clone https://github.com/cihat-kose/appium-mobile-automation-framework.git
+   cd appium-mobile-automation-framework
    ```
 
 2. **Start Android Emulator or Connect a Physical Device**:
@@ -187,7 +187,7 @@ Appium_TestNG_MobileAutomationTesting
 The project uses Log4j2 for logging. Configuration is set in the `log4j2.xml` file located in the `src/test/resources/logs` directory. Logs provide detailed information about the test execution and any issues encountered.
 
 ### 👥 Contributors
-- [ChatGTHB](https://github.com/ChatGTHB)
+- [cihat-kose](https://github.com/cihat-kose)
 
 ### 🤝 Contributing
 Contributions are welcome! Please fork the repository and create a pull request.
